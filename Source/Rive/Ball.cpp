@@ -72,8 +72,8 @@ void ABall::BallServe(AAIPlayer* SenderF, AAIPlayer* ReceiverF)
 	// Ball pick random point near AI and then AI moves to the ball
 	{
 		TargetPos = Receiver->GetActorLocation();
-		TargetPos.X += FMath::RandRange(-100.f, 100.f);
-		TargetPos.Y += FMath::RandRange(-100.f, 100.f);
+		TargetPos.X += FMath::RandRange(0.f, 100.f);
+		TargetPos.Y += FMath::RandRange(0.f, 100.f);
 		//DrawDebugSphere(GetWorld(), TargetPos, 100.f, 10, FColor::Red, false, 50.f);
 		Receiver->MoveTo(TargetPos);
 	}

@@ -63,7 +63,7 @@ void AAIPlayer::MoveTo(const FVector DestLocation)
 {
 	if (AIController)
 	{
-		AIController->MoveToLocation(DestLocation, 0.f);
+		AIController->MoveToLocation(DestLocation, 0.1,false);
 	}
 }
 
